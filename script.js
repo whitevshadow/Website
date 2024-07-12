@@ -1,0 +1,1 @@
+$("#loading-container").addClass("fade-out");

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>TechNet World</title>
+</head>
+<body class="scroll-smooth">
+  <div id="loading-container" class="fade-out">
+    <div id="cube1" class="cube"></div>
+    <div id="cube2" class="cube"></div>
+    <div id="cube3" class="cube"></div>
+    <div id="cube4" class="cube"></div>
+    <h4 class="text-center font-weight-bold py-4">Loading...</h4>
+  </div>
+
+
+  <div class="container-fluid">
+
+    <!-- Navbar-->
+    <div class="bg-light min-vh-100 d-flex flex-column align-items-center py-5">
+      <div class="bg-white shadow-lg rounded-lg w-100 px-4 px-md-0">
+        <header class="d-flex justify-content-between align-items-center p-4 bg-white border-bottom">
+          <div class="d-flex align-items-center gap-4">
+            <img height="60" width="240" src="img/logo.png" alt="... Profile">
+            <nav class="d-flex flex-wrap justify-content-center">
+              <a href="index.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>HOME</b></a>
+              <a href="about_us.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>ABOUT US</b></a>
+              <a href="product.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>PRODUCT</b></a>
+              <a href="services.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>SERVICES</b></a>
+              <a href="event_reg.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>EVENT REGISTRATION</b></a>
+              <a href="training.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>TRAINING</b></a>
+              <a href="career.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>CAREER</b></a>
+            </nav>
+          </div>
+          <div>
+            <a href="contact.html"><button type="button" class="btn btn-primary">CONTACT</button></a>
+          </div>
+        </header>
+        <!-- Image Slider-->
+        <div class="bg-cover bg-center h-screen" style="background-image: url('img/bg.jpg');">
+          <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+            <div class="text-center text-white px-6 md:px-12">
+              <h1 class="text-4xl md:text-6xl font-bold">We Help To Solution Your Favourite <span class="text-orange-500">PC/Mobile Devices</span></h1>
+              <p class="mt-4 text-lg md:text-xl">At TECHNET WORLD, we pride ourselves on providing comprehensive IT support and remote technical support services. 
+                Our team of experienced and skilled professionals is dedicated to delivering exceptional solutions for all your IT needs. 
+                With a commitment to engineering excellence, we have adapted to the ever-changing landscape of technology to ensure our clients receive the best possible services.</p>
+              <a href="about_us.html"><button class="mt-6 bg-orange-500 text-white px-6 py-3 rounded-lg">Learn More</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="container mx-auto py-12 px-4 md:px-0">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold text-orange-500 mb-4">Make An Appointment</h2>
+            <form action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="post">
+              <div class="mb-4">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded-lg">
+              </div>
+              <div class="mb-4">
+                <input type="text" name="telephone" placeholder="Telephone" class="w-full p-3 border rounded-lg">
+              </div>
+              <div class="mb-4">
+                <input type="email" name="email" placeholder="E-mail Address" class="w-full p-3 border rounded-lg">
+              </div>
+              <div class="mb-4">
+                <input type="text" name="subject" placeholder="Subject" class="w-full p-3 border rounded-lg">
+              </div>
+              <div class="mb-4">
+                <input type="date" name="date" placeholder="Date" class="w-full p-3 border rounded-lg">
+              </div>
+              <div class="mb-4">
+                <input type="time" name="time" placeholder="Time" class="w-full p-3 border rounded-lg">
+              </div>
+              <div class="mb-4">
+                <textarea name="problemDetails" placeholder="Problem In Details" class="w-full p-3 border rounded-lg"></textarea>
+              </div>
+              <div class="mb-4">
+                <input type="file" name="file" accept="image/*" class="w-full p-3 border rounded-lg">
+              </div>
+              <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded-lg w-full">Send Request</button>
+            </form>
+          </div>
+
+          
+      
+        <!--Photo -->
+
+      <div class="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="flex items-start">
+          <img src="img/t1.png" alt="Capture Your Problem" class="mr-4">
+          <div>
+            <h3 class="text-xl font-semibold">Capture Your Problem</h3>
+            <p class="text-zinc-600">If you are experiencing technical issues with your PC, laptop, router, or printer, we are here to help. 
+              Our team of experts is dedicated to providing you with the best possible solutions to your problems. Whether you are experiencing slow performance, 
+              connectivity issues, or printer errors, we can help you troubleshoot and resolve the issue.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <img src="img/t2.png" alt="Get A Quotes" class="mr-4">
+          <div>
+            <h3 class="text-xl font-semibold">Get A Quotes</h3>
+            <p class="text-zinc-600">Get a quote for our technical support services and see how we can help you with your technical issues. 
+              Our quotes are competitive and tailored to your specific needs. Whether you need help with PC repair, laptop maintenance, or router configuration,
+               we can provide you with a quote that fits your budget.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <img src="img/t3.png" alt="Make An Appointment" class="mr-4">
+          <div>
+            <h3 class="text-xl font-semibold">Make An Appointment</h3>
+            <p class="text-zinc-600">Make an appointment with our technical support team to get help with your technical issues. 
+              Our team is available to assist you with a wide range of technical issues, 
+              including PC repair, laptop maintenance, router configuration, and printer troubleshooting.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <img src="img/t4.png" alt="Delivery" class="mr-4">
+          <div>
+            <h3 class="text-xl font-semibold">Delivery</h3>
+            <p class="text-zinc-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide-->
+    <div class="bg-white dark:bg-zinc-900 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-extrabold text-zinc-900 dark:text-white">Why Choose Us</h2>
+        <p class="mt-4 text-lg leading-6 text-zinc-500 dark:text-zinc-400">Some of Our Features</p>
+        <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="pt-6">
+            <div class="flow-root bg-zinc-50 dark:bg-zinc-800 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div>
+                  <span class="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <img src="https://placehold.co/50x50" alt="Professional" />
+                  </span>
+                </div>
+                <h3 class="mt-8 text-lg font-medium text-zinc-900 dark:text-white">We Are Professional</h3>
+                <p class="mt-5 text-base text-zinc-500 dark:text-zinc-400">Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <div class="flow-root bg-zinc-50 dark:bg-zinc-800 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div>
+                  <span class="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <img src="https://placehold.co/50x50" alt="Friendly Service" />
+                  </span>
+                </div>
+                <h3 class="mt-8 text-lg font-medium text-zinc-900 dark:text-white">Friendly Service</h3>
+                <p class="mt-5 text-base text-zinc-500 dark:text-zinc-400">Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <div class="flow-root bg-zinc-50 dark:bg-zinc-800 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div>
+                  <span class="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <img src="https://placehold.co/50x50" alt="No Fix No Fees" />
+                  </span>
+                </div>
+                <h3 class="mt-8 text-lg font-medium text-zinc-900 dark:text-white">No Fix No Fees</h3>
+                <p class="mt-5 text-base text-zinc-500 dark:text-zinc-400">Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <div class="flow-root bg-zinc-50 dark:bg-zinc-800 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div>
+                  <span class="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <img src="https://placehold.co/50x50" alt="Well Reputation" />
+                  </span>
+                </div>
+                <h3 class="mt-8 text-lg font-medium text-zinc-900 dark:text-white">Well Reputation</h3>
+                <p class="mt-5 text-base text-zinc-500 dark:text-zinc-400">Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <div class="flow-root bg-zinc-50 dark:bg-zinc-800 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div>
+                  <span class="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <img src="https://placehold.co/50x50" alt="Free Diagnostics" />
+                  </span>
+                </div>
+                <h3 class="mt-8 text-lg font-medium text-zinc-900 dark:text-white">Free Diagnostics</h3>
+                <p class="mt-5 text-base text-zinc-500 dark:text-zinc-400">Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <div class="flow-root bg-zinc-50 dark:bg-zinc-800 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div>
+                  <span class="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <img src="https://placehold.co/50x50" alt="Low Price Guarantee" />
+                  </span>
+                </div>
+                <h3 class="mt-8 text-lg font-medium text-zinc-900 dark:text-white">Low Price Guarantee</h3>
+                <p class="mt-5 text-base text-zinc-500 dark:text-zinc-400">Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <div class="flow-root bg-zinc-50 dark:bg-zinc-800 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div>
+                  <span class="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <img src="https://placehold.co/50x50" alt="Quick Repair Process" />
+                  </span>
+                </div>
+                <h3 class="mt-8 text-lg font-medium text-zinc-900 dark:text-white">Quick Repair Process</h3>
+                <p class="mt-5 text-base text-zinc-500 dark:text-zinc-400">Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pt-6">
+            <div class="flow-root bg-zinc-50 dark:bg-zinc-800 rounded-lg px-6 pb-8">
+              <div class="-mt-6">
+                <div>
+                  <span class="inline-flex items-center justify-center p-3 bg-orange-500 rounded-md shadow-lg">
+                    <img src="https://placehold.co/50x50" alt="30 Days Warantee" />
+                  </span>
+                </div>
+                <h3 class="mt-8 text-lg font-medium text-zinc-900 dark:text-white">30 Days Warantee</h3>
+                <p class="mt-5 text-base text-zinc-500 dark:text-zinc-400">Lorem Ipsum is simply dummy text of the print been the industry's standard.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-orange-500 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <img src="https://placehold.co/50x50" alt="Happy Clients" class="mx-auto mb-4" />
+            <h3 class="text-3xl font-bold">94816</h3>
+            <p class="mt-2 text-lg">Happy Clients</p>
+          </div>
+          <div>
+            <img src="https://placehold.co/50x50" alt="Completed Deals" class="mx-auto mb-4" />
+            <h3 class="text-3xl font-bold">102370</h3>
+            <p class="mt-2 text-lg">Completed Deals</p>
+          </div>
+          <div>
+            <img src="https://placehold.co/50x50" alt="Running Proect" class="mx-auto mb-4" />
+            <h3 class="text-3xl font-bold">579</h3>
+            <p class="mt-2 text-lg">Running Proect</p>
+          </div>
+          <div>
+            <img src="https://placehold.co/50x50" alt="Award Winning" class="mx-auto mb-4" />
+            <h3 class="text-3xl font-bold">3226</h3>
+            <p class="mt-2 text-lg">Award Winning</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    
+    window.onload = function() {
+      const loadingContainer = document.getElementById('loading-container');
+      loadingContainer.classList.add('fade-out');
+
+      setTimeout(() => {
+        loadingContainer.remove();
+      }, 2000); // Remove the loading container after the fade-out animation is complete
+    };
+  </script>
+</body>
+</html>
