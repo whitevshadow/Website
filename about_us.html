@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>TechNet World</title>
+</head>
+<body class="scroll-smooth">
+  <div id="loading-container" class="fade-out">
+    <div id="cube1" class="cube"></div>
+    <div id="cube2" class="cube"></div>
+    <div id="cube3" class="cube"></div>
+    <div id="cube4" class="cube"></div>
+    <h4 class="text-center font-weight-bold py-4">Loading...</h4>
+  </div>
+  <div class="bg-light min-vh-100 d-flex flex-column align-items-center py-5">
+    <div class="bg-white shadow-lg rounded-lg max-w-4xl w-100">
+      <header class="d-flex justify-content-between align-items-center p-4 bg-white border-bottom">
+        <div class="d-flex align-items-center gap-4">
+          <img height="60" width="240" src="img/logo.png" alt="... Profile">
+          <nav class="d-flex flex-wrap justify-content-center">
+            <a href="index.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>HOME</b></a>
+            <a href="about_us.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>ABOUT US</b></a>
+            <a href="product.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>PRODUCT</b></a>
+            <a href="services.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>SERVICES</b></a>
+            <a href="event_reg.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>EVENT REGISTRATION</b></a>
+            <a href="training.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>TRAINING</b></a>
+            <a href="career.html" class="text-secondary hover-text-black hover-bg-zinc-200 hover-shadow-lg hover-translate-y-1 transition duration-300 rounded-lg py-2 px-4 text-decoration-none"><b>CAREER</b></a>
+          </nav>
+        </div>
+        <div>
+          <a href="contact.html"><button type="button" class="btn btn-primary">CONTACT</button></a>
+        </div>
+      </header>
+    </div>
+  </div>
+  <script>
+    window.onload = function() {
+      const loadingContainer = document.getElementById('loading-container');
+      loadingContainer.classList.add('fade-out');
+
+      setTimeout(() => {
+        loadingContainer.remove();
+      }, 2000); // Remove the loading container after the fade-out animation is complete
+    };
+  </script>
+</body>
+</html>
